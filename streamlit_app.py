@@ -52,5 +52,5 @@ streamlit.dataframe(my_data_rows)
 #Nw section to display fruityvice api response
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-fruits_selected_list = streamlit.multiselect("What fruit would yo like to add?", list(my_data_rows.index))
+fruits_selected_list = streamlit.select("What fruit would yo like to add?", list(my_data_rows.index))
 fruits_to_show = my_fruit_list.loc[fruits_selected_list]
