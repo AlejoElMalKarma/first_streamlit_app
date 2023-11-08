@@ -48,9 +48,9 @@ my_cur.execute("select * from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains")
 streamlit.dataframe(my_data_rows)
-my_fruit_list_2 = my_data_rows
+#my_fruit_list_2 = my_data_rows
 
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 add_my_fruit = streamlit.select("What fruit would yo like to add?", list(my_data_rows.index))
-fruits_to_show_2 = my_fruit_list_2.loc[add_my_fruit]
+#fruits_to_show_2 = my_fruit_list_2.loc[add_my_fruit]
