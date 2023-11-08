@@ -53,5 +53,5 @@ streamlit.dataframe(my_data_rows)
 streamlit.text(my_data_rows.index)
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-#add_my_fruit = streamlit.select("What fruit would yo like to add?", list(my_data_rows.index))
-#fruits_to_show_2 = my_fruit_list_2.loc[add_my_fruit]
+add_my_fruit = sstreamlit.text_input("What fruit would yo like to add?", 'jackfruit')
+streamlit.write('Thanks for adding ',add_my_fruit)
